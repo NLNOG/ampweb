@@ -238,7 +238,7 @@ function drawFlotTimeSeries($src, $dst, $date, $graphOptions, $item_name, $lineG
       ?>
         <link rel="stylesheet" href="js/flot/flot.css" type="text/css">
         <?php //echo "<script type=\"text/javascript\" src=\"modules/" . htmlspecialchars($gType) . "_test.js\"></script>"; ?>  
-        <script language="javascript" type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+        <script language="javascript" type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
         <script type="text/javascript" src="modules/<?php echo htmlspecialchars($gType); ?>_test.js"></script>
         <!--[if IE]><script language="javascript" type="text/javascript" src="js/flot/excanvas.min.js"></script><![endif]-->    
         <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.js"></script>
@@ -422,7 +422,7 @@ function drawFlotNormal($src, $dst, $date, $graphOptions, $item_name, $lineGraph
       ?>
         <link rel="stylesheet" href="js/flot/flot.css" type="text/css">
         <?php //echo "<script type=\"text/javascript\" src=\"modules/" . htmlspecialchars($gType) . "_test.js\"></script>"; ?>  
-        <script language="javascript" type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+        <script language="javascript" type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
         <script type="text/javascript" src="modules/<?php echo htmlspecialchars($gType); ?>_test.js"></script>
         <!--[if IE]><script language="javascript" type="text/javascript" src="js/flot/excanvas.min.js"></script><![endif]-->    
         <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.js"></script>

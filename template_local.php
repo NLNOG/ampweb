@@ -13,7 +13,7 @@ function local_templateTop(){
  <link rel="stylesheet" href="wand.css" type="text/css" />
  <title>AMP Measurements</title>
  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
- <script type="text/javascript" src="js/jquery-1.4.min.js"></script>
+ <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
 </head>
 <body>
 <div class="header">

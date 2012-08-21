@@ -380,7 +380,7 @@ if ( count($siteInfo) > 0 && count($siteInfoDest) > 0 ) {
 
       // unique id for this source->destination
       //$id = str_replace(array('.', ':'), '-', "{$sourceName}_{$destName}");
-      $id = str_replace(array('.', ':'), '-', "{$sourceSite}_{$destSite}");
+      $id = str_replace(array(':'), '-', "{$sourceSite}_{$destSite}");
 
       // time intervals we are expecting to get back from the API
       $intervals = array(
@@ -440,6 +440,29 @@ if ( count($siteInfo) > 0 && count($siteInfoDest) > 0 ) {
         echo "<a href='graph.php?src=" . urlencode($sourceSite) . 
           "&amp;dst=" . urlencode($destSite) . "'>" .
           htmlspecialchars($metricvalue) . "</a>";
+
+	echo '<span class="hide">';
+
+        if ( isset($result[$options['metric']]) &&
+            isset($result[$options['metric']]['10mins']) &&
+            $result[$options['metric']]['10mins'] ) {
+          echo '<span class="10mins">' .
+            htmlspecialchars($result[$options['metric']]['10mins']).'</span>';
+        }
+
+        if ( isset($result[$options['metric']]) &&
+            isset($result[$options['metric']]['1day']) &&
+            $result[$options['metric']]['1day'] ) {
+          echo '<span class="1day">' .
+            htmlspecialchars($result[$options['metric']]['1day']).'</span>';
+        }
+
+        if($options['metric'] == 'latency') {
+          echo '<span class="stddev_1day">' .
+            htmlspecialchars($result['latency-stddev']['1day']).'</span>';
+        }
+
+        echo '</span></td>';
 
       }
     }
@@ -745,6 +768,36 @@ function customFilter(desc, value) {
         // Fall back to the old system (gradient)
         return getSimpleColour((latency/80)*255)
       }
+      
+      /* try to colour cells based on how different to normal the latency is */
+      function getStyleForLatency2(latency, mean, stddev) {
+	      var diff;
+	      if ( latency <= mean || latency < 1 || stddev == 0)
+		      return { border: '3px #00FF00 solid' };
+
+	      diff = (latency - mean) / stddev;
+	      if ( diff < 4 ) {
+		      return { border: '3px '+getColourForLatency(diff*10)+' solid' };
+	      }
+	      //alert(latency + " " + mean + " " + stddev + " diff:" + diff);
+	      if ( diff < 8 ) {
+		      //color = (diff-1)*100; // 0..100
+		      color = (diff-1)*33; // 0..100
+		      color = color * 128.0/100; // 0..128
+		      color = 255-Math.round(color);
+		      color = color.toString(16);
+		      if(color.length == 1) color = "0"+color; // pad hex
+		      return {
+border: '3px #FF0000 solid',
+		background: '#FF'+color+color
+		      };
+
+	      }
+	      return {
+border: '3px #FF0000 solid',
+		background: '#F00000',
+	      };
+      }
 
       function getStyleForLatency(latency)
       {
@@ -841,7 +894,7 @@ function customFilter(desc, value) {
         content: {
           text: ' ',
           ajax: {
-            url: "http://erg.wand.net.nz/amp/testing/staging2/tooltipdata.php",
+            url: "http://amp.ring.nlnog.net/tooltipdata.php",
             /*data: { src: $(this).attr("src"), dst: $(this).attr("dst") },*/
             type: "GET",
           },
@@ -916,9 +969,15 @@ function customFilter(desc, value) {
           if(!$(this).parent().hasClass('head') && 
             !$(this).parent().hasClass('broken')) {
 
-          var value    = ($(this).text() !== '') ? Number($(this).text()) : '';
+	  var value    = ($(this).text() !== '') ? Number($(this).text()) : '';
           var parent   = $($(this).parent());
+          var hide     = $(parent.children('span.hide').get(0));
+          var children = hide.children('span');
           var data     = {};
+
+          children.each(function() {
+            data[$(this).attr('class')] = Number($(this).text());
+            });
 
           /*
            * avg(10mins) < avg(1day) + 1*stddev(1day) => green
@@ -960,7 +1019,7 @@ function customFilter(desc, value) {
             value = Math.ceil(value);
 
             if(parent.hasClass('latency')) {
-              parent.css(getStyleForLatency(value));
+	      parent.css(getStyleForLatency2(value, data['1day'], data['stddev_1day']));
             }
             else if(parent.hasClass('loss')) {
               if(value != 0) value = (Math.log(value)/Math.log(100)) * 255;
