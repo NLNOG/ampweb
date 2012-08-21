@@ -1,0 +1,34 @@
+<map name="pathmap-2012-07-31-ring-acsystemy01-ring-amazon01">
+<area shape="rectangle" coords = "27,67 126,75" title="graph.php?src=ring-acsystemy01&dst=ring-amazon01&date=2012-07-31" href="graph.php?src=ring-acsystemy01&dst=ring-amazon01&date=2012-07-31" >
+<area shape="rectangle" coords = "126,68 143,76" title="ring-acsystemy01" href="trace_detail.php?src=ring-acsystemy01&dst=ring-amazon01&date=2012-07-31" >
+<area shape="rectangle" coords = "142,68 169,76" title="nlnogring-gw.net.acsystemy.pl" href="trace_detail.php?src=ring-acsystemy01&dst=ring-amazon01&date=2012-07-31" >
+<area shape="rectangle" coords = "168,68 195,76" title="ae0-178.waw20.ip4.tinet.net" href="trace_detail.php?src=ring-acsystemy01&dst=ring-amazon01&date=2012-07-31" >
+<area shape="rectangle" coords = "195,68 222,76" title="xe-1-1-0.was14.ip4.tinet.net" href="trace_detail.php?src=ring-acsystemy01&dst=ring-amazon01&date=2012-07-31" >
+<area shape="rectangle" coords = "221,68 248,76" title="vadata-gw.ip4.tinet.net" href="trace_detail.php?src=ring-acsystemy01&dst=ring-amazon01&date=2012-07-31" >
+<area shape="rectangle" coords = "248,68 275,76" title="72.21.220.39" href="trace_detail.php?src=ring-acsystemy01&dst=ring-amazon01&date=2012-07-31" >
+<area shape="rectangle" coords = "274,68 301,76" title="72.21.222.155" href="trace_detail.php?src=ring-acsystemy01&dst=ring-amazon01&date=2012-07-31" >
+<area shape="rectangle" coords = "300,68 327,76" title="216.182.224.133" href="trace_detail.php?src=ring-acsystemy01&dst=ring-amazon01&date=2012-07-31" >
+<area shape="rectangle" coords = "327,68 354,76" title="0.0.0.0" href="trace_detail.php?src=ring-acsystemy01&dst=ring-amazon01&date=2012-07-31" >
+<area shape="rectangle" coords = "353,68 380,76" title="0.0.0.0" href="trace_detail.php?src=ring-acsystemy01&dst=ring-amazon01&date=2012-07-31" >
+<area shape="rectangle" coords = "380,68 407,76" title="0.0.0.0" href="trace_detail.php?src=ring-acsystemy01&dst=ring-amazon01&date=2012-07-31" >
+<area shape="rectangle" coords = "406,68 433,76" title="0.0.0.0" href="trace_detail.php?src=ring-acsystemy01&dst=ring-amazon01&date=2012-07-31" >
+<area shape="rectangle" coords = "432,68 459,76" title="100.64.13.131" href="trace_detail.php?src=ring-acsystemy01&dst=ring-amazon01&date=2012-07-31" >
+<area shape="rectangle" coords = "459,68 486,76" title="0.0.0.0" href="trace_detail.php?src=ring-acsystemy01&dst=ring-amazon01&date=2012-07-31" >
+<area shape="rectangle" coords = "485,68 512,76" title="0.0.0.0" href="trace_detail.php?src=ring-acsystemy01&dst=ring-amazon01&date=2012-07-31" >
+<area shape="rectangle" coords = "512,68 530,76" title="ring-amazon01" href="trace_detail.php?src=ring-acsystemy01&dst=ring-amazon01&date=2012-07-31" >
+<area shape="rectangle" coords = "343,93 442,101" title="graph.php?src=ring-acsystemy01&dst=ring-maverick01:v6&date=2012-07-31" href="graph.php?src=ring-acsystemy01&dst=ring-maverick01:v6&date=2012-07-31" >
+<area shape="rectangle" coords = "442,94 459,102" title="ring-acsystemy01" href="trace_detail.php?src=ring-acsystemy01&dst=ring-maverick01:v6&date=2012-07-31" >
+<area shape="rectangle" coords = "458,94 485,102" title="2a03:e800:0:ffff::1" href="trace_detail.php?src=ring-acsystemy01&dst=ring-maverick01:v6&date=2012-07-31" >
+<area shape="rectangle" coords = "484,94 511,102" title="2001:7f8:42::a503:4688:1" href="trace_detail.php?src=ring-acsystemy01&dst=ring-maverick01:v6&date=2012-07-31" >
+<area shape="rectangle" coords = "511,94 529,102" title="ring-maverick01:v6" href="trace_detail.php?src=ring-acsystemy01&dst=ring-maverick01:v6&date=2012-07-31" >
+<area shape="rectangle" coords = "343,41 442,49" title="graph.php?src=ring-acsystemy01&dst=ring-hosteam01&date=2012-07-31" href="graph.php?src=ring-acsystemy01&dst=ring-hosteam01&date=2012-07-31" >
+<area shape="rectangle" coords = "442,42 459,50" title="ring-acsystemy01" href="trace_detail.php?src=ring-acsystemy01&dst=ring-hosteam01&date=2012-07-31" >
+<area shape="rectangle" coords = "458,42 485,50" title="nlnogring-gw.net.acsystemy.pl" href="trace_detail.php?src=ring-acsystemy01&dst=ring-hosteam01&date=2012-07-31" >
+<area shape="rectangle" coords = "484,42 511,50" title="hosteam.plix.pl" href="trace_detail.php?src=ring-acsystemy01&dst=ring-hosteam01&date=2012-07-31" >
+<area shape="rectangle" coords = "511,42 529,50" title="ring-hosteam01" href="trace_detail.php?src=ring-acsystemy01&dst=ring-hosteam01&date=2012-07-31" >
+<area shape="rectangle" coords = "343,119 442,127" title="graph.php?src=ring-acsystemy01&dst=ring-hosteam01:v6&date=2012-07-31" href="graph.php?src=ring-acsystemy01&dst=ring-hosteam01:v6&date=2012-07-31" >
+<area shape="rectangle" coords = "442,120 459,128" title="ring-acsystemy01" href="trace_detail.php?src=ring-acsystemy01&dst=ring-hosteam01:v6&date=2012-07-31" >
+<area shape="rectangle" coords = "458,120 485,128" title="2a03:e800:0:ffff::1" href="trace_detail.php?src=ring-acsystemy01&dst=ring-hosteam01:v6&date=2012-07-31" >
+<area shape="rectangle" coords = "484,120 511,128" title="2001:7f8:42::a505:1290:2" href="trace_detail.php?src=ring-acsystemy01&dst=ring-hosteam01:v6&date=2012-07-31" >
+<area shape="rectangle" coords = "511,120 529,128" title="ring-hosteam01:v6" href="trace_detail.php?src=ring-acsystemy01&dst=ring-hosteam01:v6&date=2012-07-31" >
+</map>

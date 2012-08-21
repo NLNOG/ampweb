@@ -1,0 +1,287 @@
+img {
+	border: 0px;
+	margin: 8pt;
+}
+
+a:link {
+	background: transparent;
+	color: #225599;
+	text-decoration: none;
+}
+a:visited {
+	background: transparent;
+	color: #225599;
+	text-decoration: none;
+}
+a:hover {
+	background: transparent;
+	color: #225599;
+	text-decoration: underline;
+}
+a:active {
+	background: transparent;
+	color: #CC0000;
+	text-decoration: underline;
+}
+
+a.nohover:link {
+    background: transparent;
+    color: #225599;
+    text-decoration: none;
+}
+a.nohover:hover {
+    background: transparent;
+    color: #225599;
+    text-decoration: none;
+}
+a.nohover:visited {
+    background: transparent;
+    color: #225599;
+    text-decoration: underline;
+}
+a.nohover:active {
+    background: transparent;
+    color: #CC0000;
+    text-decoration: none;
+}
+
+body {
+	background: #dddddd;
+	color: black;
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;	
+}
+h1 {
+	background: white;
+	color: black;
+	text-align: center;
+	font-size: x-large;
+	margin-top: 20px;
+	border-bottom: 1px solid #CC0000;
+	font-family: sans-serif;
+	margin-bottom: 20pt;
+}
+h2 {
+	font-size: medium;
+    text-align: left;
+	margin: 0px;
+    margin-bottom: 10px;
+	border-bottom: 1px solid #CC0000;
+	font-family: sans-serif;	
+	white-space: nowrap;
+}
+h2.graphtitle {
+	margin-bottom: 0px;
+	border-bottom-style: dotted;
+}
+h3 {
+    display: inline;
+}
+
+div.menu {
+	background: white;
+	color: black;
+	padding: 20px;
+	margin: 10px;
+	border: 1px solid gray;
+	margin-right: 0px;
+        margin-bottom: 0px;
+	-moz-border-radius: 15pt;
+        font-size: 11px;
+}
+
+.sidebar-input {
+    font-size: small;
+}
+
+div.header {
+	background: white;
+	color: black;
+	width: 100%;
+	border-bottom: 2px solid #CC0000;
+}
+
+div.content > p {
+	text-align: justify;
+}
+
+div.content {
+	background: white;
+	color: #222222;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 10px;
+	border: 1px solid gray;
+	line-height: 1.1;
+	-moz-border-radius: 15pt;
+}
+
+
+div.graph {
+    border: none;
+    /*border: 5px solid red;*/
+    padding: 0px;
+    margin: 0px;
+}
+div.graph img{
+    border: none;
+    /*border: 5px solid black;*/
+    padding-top: 0px;
+    margin: 0px;
+}
+
+
+.content DIV {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.content DIV.graph {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    text-align: center;
+}
+
+div.summarystats {
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+form.graphoptions {
+    display: inline;
+}
+span.graphoptions {
+    font-size: 11px;
+    font-family: sans-serif;	
+    font-weight: normal;
+}
+input.graphoptions {
+    font-size: 11px;
+    font-family: sans-serif;	
+    font-weight: normal;
+    vertical-align: middle;
+}
+input.graphoptionssubmit {
+    font-size: 11px;
+    font-family: sans-serif;	
+    font-weight: normal;
+    vertical-align: middle;
+    background: white;
+    border: none;
+    color: #225599;
+    text-decoration: none;
+    cursor: pointer;
+}
+input.graphoptionssubmit:hover {
+    font-size: 11px;
+    font-family: sans-serif;	
+    font-weight: normal;
+    vertical-align: middle;
+    background: transparent;
+    color: #225599;
+    text-decoration: underline;
+    cursor: pointer;
+}
+div.footer {
+	background: transparent;
+	color: #777777;
+	text-align: center;
+	border-top: 1px solid #222222;
+	font-size: small;
+	margin: 10px;
+}
+
+table {
+	width: 100%;
+}
+table.shaded TD,TH {
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+
+td.menu {
+	width: 100px;
+}
+
+td.title {
+	padding: 10px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+td.content {
+	width: 100%;
+}
+
+th {
+    font-weight: bold;
+    background-color:#bbbbbb;
+    text-align: left;
+}
+th.sorted {
+    font-style: italic;
+}
+
+.desc {
+	font-size: x-small;
+	background: transparent;
+	color: #555555;
+}
+
+ul {
+	padding-left: 10px;
+	margin-left: 0pt;
+}
+
+li {
+	padding-left: 0pt;
+	margin-left: 0pt;
+	white-space: nowrap;
+}
+
+.errmsg {
+    margin:10px;
+    font-weight: bold;
+    color: red;
+}
+
+tr.th {
+    background-color:#bbbbbb;
+}
+tr.row0 {
+    background-color:#cccccc;
+}
+tr.row1 {
+    background-color:#dddddd;
+}
+table.prefs {
+    font-size: 11px;
+}
+.preft {
+    font-size: 11px;
+    text-align: center;
+    border-right:2px solid black;
+}
+.prefv {
+    font-size: 11px;
+    text-align: center;
+    border-right:1px solid white;
+    border-bottom: 1px solid white;
+}
+.prefd {
+    font-size: 11px;
+    text-align: center;
+    border-right:2px solid black;
+    border-bottom: 1px solid white;
+}
+
+pre.apicode {
+    border:1px solid grey; 
+    line-height:125%;
+    margin:1em; 
+    padding:.99em; 
+    overflow:auto; 
+    word-wrap:break-word;
+}

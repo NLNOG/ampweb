@@ -1,0 +1,25 @@
+<map name="pathmap-2012-07-30-ring-hostway01-ring-acsystemy01">
+<area shape="rectangle" coords = "27,41 114,49" title="graph.php?src=ring-hostway01&dst=ring-acsystemy01&date=2012-07-30" href="graph.php?src=ring-hostway01&dst=ring-acsystemy01&date=2012-07-30" >
+<area shape="rectangle" coords = "114,42 133,50" title="ring-hostway01" href="trace_detail.php?src=ring-hostway01&dst=ring-acsystemy01&date=2012-07-30" >
+<area shape="rectangle" coords = "133,42 163,50" title="v102-s2-csr.netnation.com" href="trace_detail.php?src=ring-hostway01&dst=ring-acsystemy01&date=2012-07-30" >
+<area shape="rectangle" coords = "163,42 193,50" title="e1-2-r3-br.netnation.com" href="trace_detail.php?src=ring-hostway01&dst=ring-acsystemy01&date=2012-07-30" >
+<area shape="rectangle" coords = "193,42 223,50" title="66.113.197.5" href="trace_detail.php?src=ring-hostway01&dst=ring-acsystemy01&date=2012-07-30" >
+<area shape="rectangle" coords = "223,42 253,50" title="66.113.197.9" href="trace_detail.php?src=ring-hostway01&dst=ring-acsystemy01&date=2012-07-30" >
+<area shape="rectangle" coords = "253,42 283,50" title="66.113.197.33" href="trace_detail.php?src=ring-hostway01&dst=ring-acsystemy01&date=2012-07-30" >
+<area shape="rectangle" coords = "283,42 313,50" title="66.113.197.97" href="trace_detail.php?src=ring-hostway01&dst=ring-acsystemy01&date=2012-07-30" >
+<area shape="rectangle" coords = "313,42 343,50" title="66.113.197.14" href="trace_detail.php?src=ring-hostway01&dst=ring-acsystemy01&date=2012-07-30" >
+<area shape="rectangle" coords = "343,42 373,50" title="ams-ix.gtsce.com" href="trace_detail.php?src=ring-hostway01&dst=ring-acsystemy01&date=2012-07-30" >
+<area shape="rectangle" coords = "373,42 403,50" title="195.39.209.82" href="trace_detail.php?src=ring-hostway01&dst=ring-acsystemy01&date=2012-07-30" >
+<area shape="rectangle" coords = "403,42 433,50" title="157.25.4.70" href="trace_detail.php?src=ring-hostway01&dst=ring-acsystemy01&date=2012-07-30" >
+<area shape="rectangle" coords = "433,42 463,50" title="157.25.248.126" href="trace_detail.php?src=ring-hostway01&dst=ring-acsystemy01&date=2012-07-30" >
+<area shape="rectangle" coords = "463,42 493,50" title="217.153.144.98" href="trace_detail.php?src=ring-hostway01&dst=ring-acsystemy01&date=2012-07-30" >
+<area shape="rectangle" coords = "493,42 512,50" title="ring-acsystemy01" href="trace_detail.php?src=ring-hostway01&dst=ring-acsystemy01&date=2012-07-30" >
+<area shape="rectangle" coords = "237,67 324,75" title="graph.php?src=ring-hostway01&dst=ring-occaid01:v6&date=2012-07-30" href="graph.php?src=ring-hostway01&dst=ring-occaid01:v6&date=2012-07-30" >
+<area shape="rectangle" coords = "324,68 343,76" title="ring-hostway01" href="trace_detail.php?src=ring-hostway01&dst=ring-occaid01:v6&date=2012-07-30" >
+<area shape="rectangle" coords = "343,68 373,76" title="v102-csr.netnation.com" href="trace_detail.php?src=ring-hostway01&dst=ring-occaid01:v6&date=2012-07-30" >
+<area shape="rectangle" coords = "373,68 403,76" title="e1-2-r3-br.netnation.com" href="trace_detail.php?src=ring-hostway01&dst=ring-occaid01:v6&date=2012-07-30" >
+<area shape="rectangle" coords = "403,68 433,76" title="2001:504:19::27" href="trace_detail.php?src=ring-hostway01&dst=ring-occaid01:v6&date=2012-07-30" >
+<area shape="rectangle" coords = "433,68 463,76" title="10gigabitethernet4-1.core1.sea1.he.net" href="trace_detail.php?src=ring-hostway01&dst=ring-occaid01:v6&date=2012-07-30" >
+<area shape="rectangle" coords = "463,68 493,76" title="v6-ibr01-g2-0.sttl01.occaid.net" href="trace_detail.php?src=ring-hostway01&dst=ring-occaid01:v6&date=2012-07-30" >
+<area shape="rectangle" coords = "493,68 512,76" title="ring-occaid01:v6" href="trace_detail.php?src=ring-hostway01&dst=ring-occaid01:v6&date=2012-07-30" >
+</map>

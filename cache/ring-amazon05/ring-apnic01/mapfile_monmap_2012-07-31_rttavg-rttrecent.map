@@ -1,0 +1,34 @@
+<map name="pathmap-2012-07-31-ring-amazon05-ring-apnic01">
+<area shape="rectangle" coords = "30,41 111,49" title="graph.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" href="graph.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "111,42 125,50" title="ring-amazon05" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "125,42 145,50" title="10.2.24.193" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "145,42 165,50" title="10.0.33.141" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "165,42 185,50" title="10.1.6.1" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "185,42 205,50" title="10.1.17.254" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "205,42 225,50" title="ec2-50-112-0-250.us-west-2.compute.amazonaws.com" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "225,42 245,50" title="205.251.232.220" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "245,42 265,50" title="205.251.232.196" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "265,42 285,50" title="205.251.232.73" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "285,42 305,50" title="205.251.225.161" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "305,42 325,50" title="10gigabitethernet3-3.core1.sea1.he.net" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "325,42 345,50" title="10gigabitethernet9-1.core1.sjc2.he.net" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "345,42 365,50" title="10gigabitethernet1-4.core1.sjc1.he.net" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "365,42 385,50" title="tpg-internet-pty-ltd.10gigabitethernet1-3.core1.sjc1.he.net" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "385,42 405,50" title="syd-sot-ken-crt1-ge-7-0-0.tpgi.com.au" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "405,42 425,50" title="202-7-162-246.tpgi.com.au" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "425,42 445,50" title="159.59.194.203.static.comindico.com.au" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "445,42 465,50" title="159.59.194.203.static.comindico.com.au" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "465,42 485,50" title="0.0.0.0" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "485,42 505,50" title="203.119.76.253" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "505,42 525,50" title="203.119.76.85" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "525,42 539,50" title="ring-apnic01" href="trace_detail.php?src=ring-amazon05&dst=ring-apnic01&date=2012-07-31" >
+<area shape="rectangle" coords = "310,67 391,75" title="graph.php?src=ring-amazon05&dst=ring-amazon01:v6&date=2012-07-31" href="graph.php?src=ring-amazon05&dst=ring-amazon01:v6&date=2012-07-31" >
+<area shape="rectangle" coords = "391,68 405,76" title="ring-amazon05" href="trace_detail.php?src=ring-amazon05&dst=ring-amazon01:v6&date=2012-07-31" >
+<area shape="rectangle" coords = "405,68 425,76" title="::" href="trace_detail.php?src=ring-amazon05&dst=ring-amazon01:v6&date=2012-07-31" >
+<area shape="rectangle" coords = "425,68 445,76" title="::" href="trace_detail.php?src=ring-amazon05&dst=ring-amazon01:v6&date=2012-07-31" >
+<area shape="rectangle" coords = "445,68 465,76" title="::" href="trace_detail.php?src=ring-amazon05&dst=ring-amazon01:v6&date=2012-07-31" >
+<area shape="rectangle" coords = "465,68 485,76" title="::" href="trace_detail.php?src=ring-amazon05&dst=ring-amazon01:v6&date=2012-07-31" >
+<area shape="rectangle" coords = "485,68 505,76" title="2620:107:3000::7" href="trace_detail.php?src=ring-amazon05&dst=ring-amazon01:v6&date=2012-07-31" >
+<area shape="rectangle" coords = "505,68 525,76" title="::" href="trace_detail.php?src=ring-amazon05&dst=ring-amazon01:v6&date=2012-07-31" >
+<area shape="rectangle" coords = "525,68 539,76" title="ring-amazon01:v6" href="trace_detail.php?src=ring-amazon05&dst=ring-amazon01:v6&date=2012-07-31" >
+</map>

@@ -1,0 +1,329 @@
+table#matrix {
+    font-size: 11px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    padding: 3em;
+}
+
+table#matrix thead th.empty {
+    background-color: #fff;
+    float: right;
+}
+
+table#matrix thead th, table#matrix thead td {
+    background-color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 2px;
+    border: 0; /* disable inherited border */
+}
+
+table#matrix thead th {
+    cursor: pointer;
+}
+
+table#matrix thead a {
+    color: #000;
+}
+
+table#matrix thead th.dest-title {
+    cursor: auto;
+    font-size: 12px;
+}
+
+table#matrix thead th.src-title {
+    font-size: 12px;
+}
+
+table#matrix thead th.src-title.sorting a {
+       -webkit-transform: rotate(-90deg); 
+       -moz-transform: rotate(-90deg); 
+}
+
+table#matrix tbody td.head {
+    background-color: #fff;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 5px;
+    font-size: 11px;
+    border: 0;
+}
+
+table#matrix tbody td {
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    width: 60px;
+    height: 15px;
+}
+
+table#matrix tbody td a {
+    color: #000;
+}
+
+table#matrix tbody td .hide {
+    display: none;
+    visibility: hidden;
+}
+
+table tbody td.status-missing {
+    border: 3px #FF6FD3 solid;
+}
+
+table tbody td.status-broken {
+    border: 3px #DCDCDC solid;
+    background-color: #DCDCDC;
+}
+
+table tbody td.down span.status {
+    position: relative;
+    float: right;
+    color: #0f0;
+    font-weight: bold;
+}
+
+table tbody td.up-moderate span.status {
+    position: relative;
+    float: right;
+    color: #ffa500;
+    font-weight: bold;
+}
+
+table tbody td.up-bad span.status {
+    position: relative;
+    float: right;
+    margin-left: 2px;
+    color: #f00;
+    font-weight: bold;
+}
+
+table tbody td.path-timeout span.status {
+    position: relative;
+    float: right;
+    margin-left: 2px;
+    color: #ffa500;
+    font-weight: bold;
+}
+
+#options {
+    padding-bottom: 10px;
+}
+
+.dataTables_filter {
+    padding-bottom: 10px;
+}
+
+#options label {
+    margin-left: 10px;
+}
+
+/* tooltips */
+
+.qtip table {
+    font-size: 10px;
+    color: #fff;
+    border-collapse: collapse;
+}
+
+.qtip table thead th {
+    background-color: #505050;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 2px;
+    padding-right: 5px;
+    border: 0; /* disable inherited border */
+    border-bottom: 1px #fff solid;
+}
+
+
+.qtip table tbody td.head {
+    background-color: #505050;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 11px;
+    border: 0; /* disable inherited border */
+    border-bottom: 1px #fff solid;
+}
+
+.qtip table tbody td {
+    text-align: center;
+    border-bottom: 1px #fff solid;
+    background-color: #5F5F5F;
+}
+
+/* sorting */
+span.sorticon {
+    padding: 5px;
+    display: block;
+}
+
+.sorting_asc span.sorticon {
+	background: url('js/dataTables/media/images/sort_asc.jpg') no-repeat bottom center;
+}
+
+.sorting_desc span.sorticon {
+	background: url('js/dataTables/media/images/sort_desc.jpg') no-repeat top center;
+}
+
+.sorting span.sorticon {
+	background: url('js/dataTables/media/images/sort_both.jpg') no-repeat center center;
+}
+
+.sorting_asc_disabled span.sorticon {
+	background: url('js/dataTables/media/images/sort_asc_disabled.jpg') no-repeat bottom center;
+}
+
+.sorting_desc_disabled span.sorticon {
+	background: url('js/dataTables/media/images/sort_desc_disabled.jpg') no-repeat top center;
+}
+
+#matrix {
+    /*margin-bottom: 70px;*/
+}
+
+#bottom {
+    margin-left: auto;
+    margin-right: auto;
+    width: 616px;
+    clear: both;
+}
+
+#legend {
+    float: left;
+    text-align: left;
+    margin-left: 40px;
+}
+
+#scale {
+    float: left;
+}
+
+#legend table, #scale table {
+    margin-top: 10px;
+}
+
+#scale table {
+    text-align: center;
+}
+
+#legend td, #scale td {
+    padding: 2px;
+}
+
+#legend td span.status {
+    float: none;
+}
+
+#scale table a {
+    text-decoration: none;
+    color: #222222;
+}
+
+#legend td.example {
+    padding: 5px;
+    text-align: center;
+}
+
+br.clear {
+    clear: both;
+}
+
+
+
+
+#tabs { 
+    position: relative;
+    float: left;
+    margin: 0;
+    line-height:1em;
+    list-style: none;
+}
+
+#tabs li {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#tabs a {
+    display:block;
+    color:#000000;
+    text-decoration:none;
+    font-weight:normal;
+    font-size:1em;
+    font-family: sans-serif;
+    background:#ddd;
+    margin:0;
+    padding:0.5em 1em;
+    background:#FFFFFF;
+    border-top: 6px solid #BBBBBB;
+    border-right: 6px solid #BBBBBB;
+    border-left: 6px solid #BBBBBB;
+    -moz-border-radius-topright: 5pt;
+    -moz-border-radius-topleft: 5pt;
+}
+
+#tabs a:active,
+#tabs a.here:link,
+#tabs a.here:visited {
+    background:#FFFFFF;
+}
+
+#tabs a:hover {
+    background: #bbbbbb;
+}
+
+#tabs a.here:link,
+#tabs a.here:visited {
+    position:relative;
+    z-index:102;
+    border-top: 6px solid #CC0000;
+    border-right: 6px solid #CC0000;
+    border-left: 6px solid #CC0000;
+    -moz-border-radius-topleft: 5pt;
+    -moz-border-radius-topright: 5pt;
+}
+
+#subtab {
+    position:relative;
+    background:#bbbbbb;
+    float: left;
+    width: 100%;
+    margin:0;
+    padding: 0;
+    /*padding:0.25em 0.25em 0.25em 1em;*/
+    list-style:none;
+}
+
+#subtab li {
+    width: auto;
+    float:left;
+    display:block;
+    margin-top:1px;
+    margin-bottom:1px;
+    margin-left: 50px;
+}
+
+#subtab a {
+    display:inline;
+    margin:0;
+    padding:0 1em;
+    border:0
+}
+
+
+#matrix_wrapper {
+    clear: both;
+    border: 6px solid #CC0000;
+    float: left;
+    margin-top: 0px;
+    -moz-border-radius: 5pt;
+}
+
+li label {
+    background-color: #bbbbbb;
+}

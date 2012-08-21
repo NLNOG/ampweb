@@ -1,0 +1,26 @@
+<map name="pathmap-2012-07-30-ring-amazon04-ring-antagonist01">
+<area shape="rectangle" coords = "30,41 111,49" title="graph.php?src=ring-amazon04&dst=ring-antagonist01&date=2012-07-30" href="graph.php?src=ring-amazon04&dst=ring-antagonist01&date=2012-07-30" >
+<area shape="rectangle" coords = "111,42 128,50" title="ring-amazon04" href="trace_detail.php?src=ring-amazon04&dst=ring-antagonist01&date=2012-07-30" >
+<area shape="rectangle" coords = "128,42 155,50" title="10.156.204.2" href="trace_detail.php?src=ring-amazon04&dst=ring-antagonist01&date=2012-07-30" >
+<area shape="rectangle" coords = "156,42 183,50" title="10.1.24.9" href="trace_detail.php?src=ring-amazon04&dst=ring-antagonist01&date=2012-07-30" >
+<area shape="rectangle" coords = "184,42 211,50" title="ec2-175-41-192-27.ap-northeast-1.compute.amazonaws.com" href="trace_detail.php?src=ring-amazon04&dst=ring-antagonist01&date=2012-07-30" >
+<area shape="rectangle" coords = "212,42 239,50" title="27.0.0.205" href="trace_detail.php?src=ring-amazon04&dst=ring-antagonist01&date=2012-07-30" >
+<area shape="rectangle" coords = "240,42 267,50" title="0.0.0.0" href="trace_detail.php?src=ring-amazon04&dst=ring-antagonist01&date=2012-07-30" >
+<area shape="rectangle" coords = "268,42 295,50" title="0.0.0.0" href="trace_detail.php?src=ring-amazon04&dst=ring-antagonist01&date=2012-07-30" >
+<area shape="rectangle" coords = "296,42 323,50" title="ae-0.r22.osakjp01.jp.bb.gin.ntt.net" href="trace_detail.php?src=ring-amazon04&dst=ring-antagonist01&date=2012-07-30" >
+<area shape="rectangle" coords = "323,42 350,50" title="as-0.r23.londen03.uk.bb.gin.ntt.net" href="trace_detail.php?src=ring-amazon04&dst=ring-antagonist01&date=2012-07-30" >
+<area shape="rectangle" coords = "351,42 378,50" title="ae-3.r22.amstnl02.nl.bb.gin.ntt.net" href="trace_detail.php?src=ring-amazon04&dst=ring-antagonist01&date=2012-07-30" >
+<area shape="rectangle" coords = "379,42 406,50" title="ae-1.r02.amstnl02.nl.bb.gin.ntt.net" href="trace_detail.php?src=ring-amazon04&dst=ring-antagonist01&date=2012-07-30" >
+<area shape="rectangle" coords = "407,42 434,50" title="gi1-7.bg2.am1.eu.equinix.net" href="trace_detail.php?src=ring-amazon04&dst=ring-antagonist01&date=2012-07-30" >
+<area shape="rectangle" coords = "435,42 462,50" title="ve170.br9.as16243.net" href="trace_detail.php?src=ring-amazon04&dst=ring-antagonist01&date=2012-07-30" >
+<area shape="rectangle" coords = "463,42 490,50" title="ge-1-6.cr1.ens1.nl.as51696.net" href="trace_detail.php?src=ring-amazon04&dst=ring-antagonist01&date=2012-07-30" >
+<area shape="rectangle" coords = "491,42 509,50" title="ring-antagonist01" href="trace_detail.php?src=ring-amazon04&dst=ring-antagonist01&date=2012-07-30" >
+<area shape="rectangle" coords = "252,67 333,75" title="graph.php?src=ring-amazon04&dst=ring-amazon04&date=2012-07-30" href="graph.php?src=ring-amazon04&dst=ring-amazon04&date=2012-07-30" >
+<area shape="rectangle" coords = "333,68 350,76" title="ring-amazon04" href="trace_detail.php?src=ring-amazon04&dst=ring-amazon04&date=2012-07-30" >
+<area shape="rectangle" coords = "350,68 377,76" title="10.156.204.2" href="trace_detail.php?src=ring-amazon04&dst=ring-amazon04&date=2012-07-30" >
+<area shape="rectangle" coords = "378,68 405,76" title="10.1.24.9" href="trace_detail.php?src=ring-amazon04&dst=ring-amazon04&date=2012-07-30" >
+<area shape="rectangle" coords = "406,68 433,76" title="ec2-175-41-192-27.ap-northeast-1.compute.amazonaws.com" href="trace_detail.php?src=ring-amazon04&dst=ring-amazon04&date=2012-07-30" >
+<area shape="rectangle" coords = "434,68 461,76" title="ec2-175-41-192-26.ap-northeast-1.compute.amazonaws.com" href="trace_detail.php?src=ring-amazon04&dst=ring-amazon04&date=2012-07-30" >
+<area shape="rectangle" coords = "462,68 489,76" title="0.0.0.0" href="trace_detail.php?src=ring-amazon04&dst=ring-amazon04&date=2012-07-30" >
+<area shape="rectangle" coords = "490,68 508,76" title="ring-amazon04" href="trace_detail.php?src=ring-amazon04&dst=ring-amazon04&date=2012-07-30" >
+</map>
