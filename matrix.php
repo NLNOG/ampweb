@@ -344,8 +344,6 @@ if ( count($siteInfo) > 0 && count($siteInfoDest) > 0 ) {
   echo "</thead>\n";
 
 
-exit;
-
   /* table body */
   echo "<tbody>";
   // caches all the meshes which each site is a member of
