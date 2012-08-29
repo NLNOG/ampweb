@@ -477,7 +477,7 @@ if ( count($siteInfo) > 0 && count($siteInfoDest) > 0 ) {
 
 
 <div id="bottom">
-
+<!--
     <div id="scale">
         <h3>Scale</h3>
         <table>
@@ -587,7 +587,7 @@ if ( count($siteInfo) > 0 && count($siteInfoDest) > 0 ) {
             </tbody>
         </table>
     </div>
-
+-->
 </div>
 
 <br class="clear" />
@@ -930,7 +930,17 @@ border: '3px #FF0000 solid',
           show: function(event, api) {
             var target = $(event.originalEvent.target);
 
-            if ( target.length ) {
+	    /*
+	     * Sometimes we end up getting the a tag inside the cell, which
+	     * seems pretty broken javascript behaviour when it is only the
+	     * table cells that can trigger the event. In this case, assume
+	     * the parent is what we want.
+	     */
+	    if ( target.is("a") ) {
+		    target = target.parent();
+	    }
+
+            if ( target.is("td") && target.length ) {
               api.set('content.ajax.data', { src: target.attr('src'), dst: target.attr('dst') });
             }
           }
@@ -984,6 +994,7 @@ border: '3px #FF0000 solid',
            * avg(10mins) < avg(1day) + 2*stddev(1day) => orange
            * else red
            */
+/*
           if(parent.hasClass('latency') && data['10mins'] > 0 && 
             data['1day'] > 0 && data['stddev_1day'] > 0) {
 
@@ -1006,7 +1017,7 @@ border: '3px #FF0000 solid',
               parent.prepend('<span class="status">&uarr;</span>');
             }
           }
-
+*/
           if(value === '') {
             parent.addClass('status-missing');
 
