@@ -10,7 +10,7 @@
  */
 
 // store options in here, default options are set
-$options = array("mesh" => "RING", "metric" => "latency", "protocol" => "ipv4", "dest" => "RING");
+$options = array("mesh" => "NL", "metric" => "latency", "protocol" => "ipv4", "dest" => "NL");
 $metrics = array("latency", "loss", "hops", "mtu");
 $protocols = array("ipv4", "ipv6"/*, "ethernet"*/);
 $extras = array("ampz", "commodity", "karen", "wix", "ape", "auckland");
@@ -167,9 +167,9 @@ if ( isset($options['protocol']) && !in_array($options['protocol'], $protocols))
 if ( isset($options['metric']) && !in_array($options['metric'], $metrics) )
   $options['metric'] = "latency";
 if ( !isset($options['mesh']) || strlen($options['mesh']) < 1 )
-  $options['mesh'] = "RING";
+  $options['mesh'] = "NL";
 if ( !isset($options['dest']) || strlen($options['dest']) < 1 )
-  $options['dest'] = "RING";
+  $options['dest'] = "NL";
 
 
 /* redirect to a cleaner url if required */
@@ -313,7 +313,6 @@ printTabInterface($options);
 
 /* always draw the basic table outline at least */
 echo "<table cellpadding='0' cellspacing='4' border='0' id='matrix'>\n";
-
 /* but only display table contents if there are sites */
 if ( count($siteInfo) > 0 && count($siteInfoDest) > 0 ) {
 
@@ -467,7 +466,7 @@ if ( count($siteInfo) > 0 && count($siteInfoDest) > 0 ) {
       }
     }
 		    
-    echo '</tr>\n';
+    echo '</tr>';
   }
   echo "</tbody>";
 }
@@ -887,12 +886,12 @@ border: '3px #FF0000 solid',
         $.attr(this, 'tooltip', $.attr(this, 'id'));
         var parts = $.attr(this, 'id').split("_");
         $.attr(this, 'src', parts[0]);
-        $.attr(this, 'dst', parts[1]);
+        $.attr(this, 'dst', parts[1].replace(/-v6$/, ":v6"));
       });
       
       $('<div />').qtip({
         content: {
-          text: ' ',
+          text: 'Loading data...',
           ajax: {
             url: "http://amp.ring.nlnog.net/tooltipdata.php",
             /*data: { src: $(this).attr("src"), dst: $(this).attr("dst") },*/
@@ -941,6 +940,7 @@ border: '3px #FF0000 solid',
 	    }
 
             if ( target.is("td") && target.length ) {
+              api.set('content.text', 'Loading data...');
               api.set('content.ajax.data', { src: target.attr('src'), dst: target.attr('dst') });
             }
           }
