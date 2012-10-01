@@ -1,0 +1,48 @@
+job@worker03:/var/www/amp$ cat /etc/apache2/sites-enabled/001-amp 
+<VirtualHost *:80>
+	UseCanonicalName On
+	ServerName amp.ring.nlnog.net
+	ServerAdmin ring-admins@ring.nlnog.net
+
+	DocumentRoot /var/www/amp
+	<Directory />
+		Options FollowSymLinks
+		AllowOverride None
+	</Directory>
+	ErrorLog ${APACHE_LOG_DIR}/amp-error.log
+
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	LogLevel warn
+
+	CustomLog ${APACHE_LOG_DIR}/amp-access.log combined
+	<Directory /var/www/amp>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride None
+		Order allow,deny
+		allow from all
+
+	</Directory>
+
+        RewriteEngine on
+	RewriteLog "/tmp/rewrite.log"
+	RewriteLogLevel 9 
+	RewriteRule ^/data/(xml|json|text|csv)/([.0-9a-zA-Z_-]+)/([:.0-9a-zA-Z_-]+)/([.0-9a-zA-Z_-]+)/([.0-9a-zA-Z_-]+)/([0-9]+)/([0-9]+)/([0-9]+)/?;?(.*)$ /query.php?format=$1&src=$2&dst=$3&test=$4&subtype=$5&start=$6&end=$7&binsize=$8&$9 [L]
+	RewriteRule ^/data/(xml|json|text|csv)/([.0-9a-zA-Z_-]+)/([:.0-9a-zA-Z_-]+)/([.0-9a-zA-Z_-]+)/([.0-9a-zA-Z_-]+)/([0-9]+)/([0-9]+)/?;?(.*)$ /query.php?format=$1&src=$2&dst=$3&test=$4&subtype=$5&start=$6&end=$7&$8 [L]
+
+	# complain about end not being set
+        RewriteRule ^/data/(xml|json|text|csv)/([.0-9a-zA-Z_-]+)/([:.0-9a-zA-Z_-]+)/([.0-9a-zA-Z_-]+)/([.0-9a-zA-Z_-]+)/([0-9]+)/?;?(.*)$ /query.php?format=$1&src=$2&dst=$3&test=$4&subtype=$5&start=$6&$7 [L]
+	# complain about start not being set
+        RewriteRule ^/data/(xml|json|text|csv)/([.0-9a-zA-Z_-]+)/([:.0-9a-zA-Z_-]+)/([.0-9a-zA-Z_-]+)/([.0-9a-zA-Z_-]+)/?;?(.*)$ /query.php?format=$1&src=$2&dst=$3&test=$4&subtype=$5&$6 [L]
+	# list all test subtypes
+        RewriteRule ^/data/(xml|json|text|csv)/([.0-9a-zA-Z_-]+)/([:.0-9a-zA-Z_-]+)/([.0-9a-zA-Z_-]+)/?;?(.*)$ /query.php?format=$1&src=$2&dst=$3&test=$4&$5 [L]
+	# list all tests
+        RewriteRule ^/data/(xml|json|text|csv)/([.0-9a-zA-Z_-]+)/([:.0-9a-zA-Z_-]+)/?;?(.*)$ /query.php?format=$1&src=$2&dst=$3&$4 [L]
+	# list all destinations from a source
+        RewriteRule ^/data/(xml|json|text|csv)/([0-9a-zA-Z_-]+)/?;?(.*)$ /query.php?format=$1&src=$2&$3 [L]
+	# list all sources
+        RewriteRule ^/data/(xml|json|text|csv)/?;?(.*)$ /query.php?format=$1&$2 [L]
+	RewriteRule ^/data/?$ /apidoc.php [L]
+
+</VirtualHost>
+job@worker03:/var/www/amp$

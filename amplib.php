@@ -40,7 +40,7 @@ if ($dirp = opendir($dirpath)) {
 
 # yeled monkey patch
 # $page_name = htmlspecialchars($_SERVER['REQUEST_URI']);
-$page_name = htmlspecialchars($_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF']);
+$page_name = htmlspecialchars($_SERVER['PHP_SELF']);
 
 unset($dirpath);
 unset($dirp);
