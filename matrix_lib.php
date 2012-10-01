@@ -492,7 +492,6 @@ $srcs->count = count($srcs->srcNames);
 
 $srcList = array();
 for ( $srcIndex = 0; $srcIndex < $srcs->count; ++$srcIndex ) {
-
   $srcName = $srcs->srcNames[$srcIndex];
   $srcList[$srcName] = 1;
 

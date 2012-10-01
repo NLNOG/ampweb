@@ -267,6 +267,7 @@ $destonly["AMP Monitors"] = true;
 $destonly["RING"] = false;
 
 /* select source mesh */
+global $page_name;
 echo "<div style='text-align:left'>";
 echo "<form action='$page_name' method='get'>\n";
 echo "<select id='mesh' name='mesh'>\n";
@@ -779,9 +780,8 @@ function customFilter(desc, value) {
 		      return { border: '3px '+getColourForLatency(diff*10)+' solid' };
 	      }
 	      //alert(latency + " " + mean + " " + stddev + " diff:" + diff);
-	      if ( diff < 8 ) {
-		      //color = (diff-1)*100; // 0..100
-		      color = (diff-1)*33; // 0..100
+	      if ( diff < 12 ) {
+		      color = (diff-4)*12.5; // 0..100
 		      color = color * 128.0/100; // 0..128
 		      color = 255-Math.round(color);
 		      color = color.toString(16);

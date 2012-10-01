@@ -11,6 +11,9 @@
 require_once('matrix_lib.php');
 
 function getCachedLatencyData($ampsource, $ampdest, $period) {
+	global $memcache_connected;
+	global $memcache;
+
 	/* we get a few historical periods for latency */
 	$intervals = array(
 		'10mins' => SECONDS_10MINS,
@@ -38,6 +41,7 @@ function getCachedLatencyData($ampsource, $ampdest, $period) {
     return $data;
 }
 
+$memcache_connected = false;
 
 // everything goes in here
 $magicArray = array();

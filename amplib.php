@@ -38,7 +38,9 @@ if ($dirp = opendir($dirpath)) {
   closedir($dirp);
 }
 
-$page_name = htmlspecialchars($_SERVER['REQUEST_URI']);
+# yeled monkey patch
+# $page_name = htmlspecialchars($_SERVER['REQUEST_URI']);
+$page_name = htmlspecialchars($_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF']);
 
 unset($dirpath);
 unset($dirp);
